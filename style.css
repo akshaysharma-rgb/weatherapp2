@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background:url("Stars\ night\ sky\ ｜\ GIF\ animated\ live\ wallpaper.gif") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+.card{
+    width:90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #ba00fd, #00ffb3);
+    color: #fff;
+    margin: 200px auto 100px;
+    border-radius: 60px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 5px 2px 30px rgb(163, 162, 162);
+
+}
+.search{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 100px;
+    flex: 1;
+    margin: 16px;
+    font-size: 18px;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor:pointer;
+}
+.search img{
+    width: 30px;
+    height: 30px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1{
+   font-size: 80px;
+   font-weight: 500;
+}
+.weather h2{
+     font-size: 50px;
+   font-weight: 400;
+   margin-top: -10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col{
+    display:flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+
+}
+.humidity,.wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+/* -------------------------
+   Responsive (350px - 450px)
+--------------------------*/
+
+@media (min-width: 350px) and (max-width: 510px) {
+    body{
+        background-attachment: scroll;
+        background-size: cover;
+    }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 0%;
+  }
+
+}
+
+@media (min-width: 350px) and (max-width: 510px) {
+
+  .search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .search input {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 14px;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+
+  .search button {
+    width: 60px;
+    height: 60px;
+    padding: 6px;
+    border-radius: 50%;
+    flex-shrink: 0; /* prevents button from squeezing input */
+  }
+
+  /* Prevent page overflow */
+  body {
+    overflow-x: hidden;
+  }
+}
+
